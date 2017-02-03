@@ -21,14 +21,12 @@ The approximate value of pi is 3.1315929
 Note: remember that the printed value of pi will be an estimate!
 
 """
-a=input("I will estimate pi. How many terms should I use?")
-b=input("How many decimal places should I use in the result?")
-z=int(a)
-c=int(b)
-hundred=range(0,z)
+a=int(input("I will estimate pi. How many terms should I use?"))
+b=int(input("How many decimal places should I use in the result?"))
+hundred=range(0,a)
 thing=list(hundred)
 calc= lambda f: ((-1)**f)/(2*f+1)
 y=[calc(x) for x in thing]
 total=sum(y)
 pi=str(4*total)
-print("The approximate value of pi is {0}".format(round(pi,c)))
+print("The approximate value of pi is {0}".format(round(pi,b)))
