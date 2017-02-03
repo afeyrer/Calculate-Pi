@@ -28,5 +28,5 @@ thing=list(hundred)
 calc= lambda f: ((-1)**f)/(2*f+1)
 y=[calc(x) for x in thing]
 total=sum(y)
-pi=str(4*total)
+pi=(4*total)
 print("The approximate value of pi is {0}".format(round(pi,b)))
