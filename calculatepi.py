@@ -21,8 +21,8 @@ The approximate value of pi is 3.1315929
 Note: remember that the printed value of pi will be an estimate!
 
 """
-a=int(input("I will estimate pi. How many terms should I use?"))
-b=int(input("How many decimal places should I use in the result?"))
+a=int(input("I will estimate pi. How many terms should I use? "))
+b=int(input("How many decimal places should I use in the result? "))
 hundred=range(0,a)
 thing=list(hundred)
 calc= lambda f: ((-1)**f)/(2*f+1)
